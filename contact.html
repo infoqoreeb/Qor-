@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Qore'eb</title>
+    <link rel="icon" type="image/png" href="Qoreeb.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <img src="Qoreeb.png" alt="Loading" class="loader-logo">
+            <div class="loader-spinner"></div>
+            <p>Loading Qore'eb...</p>
+        </div>
+    </div>
+
+    <!-- Floating Background Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="Qoreeb.png" alt="Qore'eb" class="logo-img">
+                <span>Qore'eb</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-dropdown">
+                    <a href="services.html" class="nav-link">Services <span class="dropdown-arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="service-launch.html">Book Launch Architecture</a></li>
+                        <li><a href="service-advertising.html">Performance Advertising</a></li>
+                        <li><a href="service-social.html">Social Media Ecosystems</a></li>
+                        <li><a href="service-email.html">Email Infrastructure</a></li>
+                        <li><a href="service-copywriting.html">Conversion Copywriting</a></li>
+                        <li><a href="service-brand.html">Brand Systems</a></li>
+                        <li><a href="service-mockup.html">Book Mockup Design</a></li>
+                        <li><a href="service-trailer.html">Book Trailer Production</a></li>
+                        <li><a href="service-listopia.html">Goodreads Listopia</a></li>
+                        <li><a href="service-bookclub.html">Book Club Outreach</a></li>
+                    </ul>
+                </li>
+                <li><a href="genres.html" class="nav-link">Genres</a></li>
+                <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="contact.html" class="nav-link nav-cta active">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="page-content">
+
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <span class="section-label fade-in">Contact Us</span>
+                <h1 class="fade-in delay-1">Let's Talk About <span class="gradient-text-animated">Your Book</span></h1>
+                <p class="fade-in delay-2">The best way to reach us is through email. Send us a message and we will get back to you with a thoughtful, detailed response within 24 to 48 hours.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info fade-in">
+                        <h2>Why Email Only?</h2>
+                        <p>At Qore'eb, we conduct all of our communication exclusively through Gmail. This is a deliberate choice, and there are several important reasons behind it.</p>
+                        <p>First, email creates a permanent written record of every conversation. When we discuss your marketing strategy, your campaign performance, your budget allocation, or your launch timeline, every detail is documented and searchable. You never have to rely on memory or worry about miscommunication.</p>
+                        <p>Second, email allows us to provide more thorough and thoughtful responses. Complex marketing strategies cannot be adequately discussed in a rushed conversation. When we respond to your questions via email, we take the time to provide complete, detailed answers that you can reference repeatedly.</p>
+                        <p>Third, email respects your time and ours. You can read and respond to our messages on your own schedule, whether that is early in the morning, late at night, or during a break in your writing routine. There is no need to coordinate availability or block out time for appointments.</p>
+
+                        <div class="contact-detail">
+                            <h3>Email Address</h3>
+                            <a href="mailto:info.qoreb@gmail.com" class="contact-email-link">info.qoreb@gmail.com</a>
+                        </div>
+
+                        <div class="contact-detail">
+                            <h3>Response Time</h3>
+                            <p>We respond to all inquiries within 24 to 48 business hours. If your inquiry is urgent, please indicate that in your subject line and we will prioritize accordingly.</p>
+                        </div>
+
+                        <div class="contact-detail">
+                            <h3>What to Include</h3>
+                            <p>When you reach out, it helps if you include the following information: your book's genre and subgenre, your publication status (published, upcoming, or in progress), your primary marketing goals, and any specific challenges you are currently facing. This allows us to provide a more relevant and useful initial response.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper fade-in delay-2">
+                        <h2>Send Us a Message</h2>
+                        <form class="contact-form" action="https://formspree.io/f/xnppyvdb" method="POST">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="genre">Book Genre</label>
+                                <select id="genre" name="genre" required>
+                                    <option value="" disabled selected>Select your genre</option>
+                                    <option value="Romance">Romance</option>
+                                    <option value="Thriller/Suspense">Thriller / Suspense</option>
+                                    <option value="Science Fiction">Science Fiction</option>
+                                    <option value="Fantasy">Fantasy</option>
+                                    <option value="Horror">Horror</option>
+                                    <option value="Mystery/Crime">Mystery / Crime</option>
+                                    <option value="Literary Fiction">Literary Fiction</option>
+                                    <option value="Historical Fiction">Historical Fiction</option>
+                                    <option value="Young Adult">Young Adult</option>
+                                    <option value="Middle Grade">Middle Grade</option>
+                                    <option value="Nonfiction - Business">Nonfiction: Business</option>
+                                    <option value="Nonfiction - Self-Help">Nonfiction: Self-Help</option>
+                                    <option value="Nonfiction - Memoir">Nonfiction: Memoir</option>
+                                    <option value="Nonfiction - Health">Nonfiction: Health &amp; Wellness</option>
+                                    <option value="Nonfiction - Christian">Nonfiction: Christian Living</option>
+                                    <option value="Poetry">Poetry</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="status">Publication Status</label>
+                                <select id="status" name="status" required>
+                                    <option value="" disabled selected>Select status</option>
+                                    <option value="Published">Already Published</option>
+                                    <option value="Upcoming">Upcoming Release</option>
+                                    <option value="In Progress">In Progress</option>
+                                    <option value="Planning">Planning Stage</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Tell us about your book, your goals, and how we can help..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message via Email</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content fade-in">
+                    <h2>Prefer to Email Directly?</h2>
+                    <p>No problem. Open your email client and send your inquiry to <strong>info.qoreb@gmail.com</strong>. We read and respond to every message personally.</p>
+                    <a href="mailto:info.qoreb@gmail.com" class="btn btn-primary">Open Email Client</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="Qoreeb.png" alt="Qore'eb">
+                        <span>Qore'eb</span>
+                    </a>
+                    <p>Strategic book marketing for authors across every genre. We build the systems, campaigns, and infrastructure that turn manuscripts into movements.</p>
+                    <a href="mailto:info.qoreb@gmail.com" class="footer-email">info.qoreb@gmail.com</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="service-launch.html">Book Launch Architecture</a></li>
+                        <li><a href="service-advertising.html">Performance Advertising</a></li>
+                        <li><a href="service-social.html">Social Media Ecosystems</a></li>
+                        <li><a href="service-email.html">Email Infrastructure</a></li>
+                        <li><a href="service-copywriting.html">Conversion Copywriting</a></li>
+                        <li><a href="service-brand.html">Brand Systems</a></li>
+                        <li><a href="service-mockup.html">Book Mockup Design</a></li>
+                        <li><a href="service-trailer.html">Book Trailer Production</a></li>
+                        <li><a href="service-listopia.html">Goodreads Listopia</a></li>
+                        <li><a href="service-bookclub.html">Book Club Outreach</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="genres.html">Genres</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Intelligence</h4>
+                    <ul>
+                        <li><a href="genres.html">Genre Strategies</a></li>
+                        <li><a href="case-studies.html">Results Archive</a></li>
+                        <li><a href="faq.html">Common Questions</a></li>
+                        <li><a href="services.html">All Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy;2026 Qore'eb. All rights reserved.</p>
+                <p>Strategic Book Marketing</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
